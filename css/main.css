@@ -4,14 +4,13 @@
 @import "design.css";
 @import "blogpage.css";
 
-a:hover {
-  text-decoration: underline;     
+
+main {
+    padding-top: 60px;
+    padding: 6% 1% 0 1%;
 }
 
-a.link-dark {
-    color: #da7b93;
-}
-
+  
 #logo {
     font-family: museo-slab, serif;
     font-weight: 800;

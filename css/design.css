@@ -3,10 +3,87 @@
 /* Css reset */
 * {
     color: #fff;
-    background-color: #2F4454;
     font-family: museo-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
     text-decoration: none;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add Background color for pages */
+html {
+    background-color: #2F4454;
+}
+
+/* Page Layout */
+.main-head {
+    text-align: center;
+    padding: 10px;
+}
+
+.design {
+    display: flex;
+}
+
+.dark {
+    width: 50%;
+    padding: 1%;
+}
+
+.light-bg {
+    background-color: #fff;
+    width: 50%;
+    padding: 1%;
+}
+
+/* Headers */
+h2 {
+    font-family: museo-slab, sans-serif;
+    font-weight: 900;
+}
+
+/* Light Headers */
+.light {
+    color: #2F4454;
+}
+
+/* Links */
+
+a:hover {
+    text-decoration: underline;     
+}
+  
+a.link-dark {
+      color: #da7b93;
+}
+a.light {
+    color: #376E70;
+}
+
+/* Buttons */
+
+/* Color Swatches */
+.colors {
+    display: flex;
+}
+
+.swatch {
+    padding: 10% 5%;
+    margin: 1%;
+    border-radius: 50%;
+}
+
+.dark-blue {
+    background-color: #2F4455;
+    border: solid 1px #fff;
+}
+
+.light-green {
+    background-color: #376E70;
+}
+
+.pink {
+    background-color: #DA7B93;
 }

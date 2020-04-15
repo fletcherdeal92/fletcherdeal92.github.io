@@ -1,0 +1,15 @@
+header {
+    position: fixed;
+    width: 100vw;
+}
+nav {
+    display: flex;
+    width: 100%;
+    background: #2F4454;
+    padding: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+    display: flex;
+}
