@@ -1,15 +1,15 @@
 /* import the other CSS rules */
+@import "nav.css";
 @import "card.css";
+@import "design.css";
+@import "blogpage.css";
 
-/* reset the css before designing */
-* {
-    color: #fff;
-    background-color: #2F4454;
-    font-family: museo-sans, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-decoration: none;
-    list-style-type: none;
+a:hover {
+  text-decoration: underline;     
+}
+
+a.link-dark {
+    color: #da7b93;
 }
 
 #logo {
