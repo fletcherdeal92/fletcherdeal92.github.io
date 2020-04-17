@@ -29,13 +29,13 @@ html {
 
 .dark {
     width: 50%;
-    padding: 1%;
+    padding: 2%;
 }
 
 .light-bg {
     background-color: #fff;
     width: 50%;
-    padding: 1%;
+    padding: 2%;
 }
 
 /* Headers */
@@ -56,21 +56,56 @@ a:hover {
 }
   
 a.link-dark {
-      color: #376E70;
+    padding: 0 4px;
+    color: #fff;
+    text-decoration: underline #DA7B93 3px;
 }
-a.light {
-    color: #376E70;
+
+a.link-light {
+    padding: 0 4px;
+    color: #2F4455;
+    text-decoration: underline #DA7B93 3px;
 }
 
 /* Buttons */
+button {
+    cursor: pointer;
+    background: none;
+    padding: 4px 8px;
+    border-radius: 25px;
+    border: solid 1.5px #fff;
+    transition: ease .5s;
+}
+
+.btn-dark:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px hsla(206, 15%, 57%, 0.25);
+}
+
+.btn-light {
+    color: #2F4455;
+    border-color: #2F4455;
+}
+
+.btn-light:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px hsla(206, 15%, 57%, 0.25);
+}
+
+.filled {
+    background-color: #376E70;
+    color: #fff;
+    border-color: #376E70;
+}
 
 /* Color Swatches */
 .colors {
     display: flex;
+    margin-top: 20px;
 }
 
 .swatch {
-    padding: 10% 5%;
+    padding: 40px 15px;
     margin: 1%;
     border-radius: 50%;
 }
@@ -86,4 +121,5 @@ a.light {
 
 .pink {
     background-color: #DA7B93;
+    color: #000;
 }
