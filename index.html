@@ -24,28 +24,29 @@
         <div class="hero">
             <h2>THE</h2>
             <h1>Wandering Creative</h1>
-            <h3>A journey through the trials and accomplishments of a creative making his way through the world</h3>
+            <p>A journey through the trials and accomplishments of a creative making his way through the world</p>
             <img src="/img/blog_Illustration.svg" alt="Illustration of a man walking through the woods" />
         </div>
-        <div id="card">
+        <h1>Recent Posts</h1>
+        <div class="card">
             <h2>Blog title</h2>
             <img src="https://images.unsplash.com/photo-1587066826448-737ac86d92bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="a beach" />
             <p>Here is some paragraph text for a link to my blog post</p>
             <a href="blogpost.html"><button class="btn-dark btn-card"> View Post </button></a>
         </div>
-        <div id="card">
+        <div class="card">
             <h2>Blog title</h2>
             <img src="https://images.unsplash.com/photo-1587066826448-737ac86d92bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="a beach" />
             <p>Here is some paragraph text for a link to my blog post</p>
             <a href="blogpost.html"><button class="btn-dark btn-card"> View Post </button></a>
         </div>
-        <div id="card">
+        <div class="card">
             <h2>Blog title</h2>
             <img src="https://images.unsplash.com/photo-1587066826448-737ac86d92bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="a beach" />
             <p>Here is some paragraph text for a link to my blog post</p>
             <a href="blogpost.html"><button class="btn-dark btn-card"> View Post </button></a>
         </div>
-        <div id="card">
+        <div class="card">
             <h2>Blog title</h2>
             <img src="https://images.unsplash.com/photo-1587066826448-737ac86d92bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="a beach" />
             <p>Here is some paragraph text for a link to my blog post</p>
@@ -53,7 +54,29 @@
         </div>
     </main>
     <footer class="grid-container">
-
+        <div class="footer-nav">
+            <div class="nav-flex">
+                <ul>
+                    <li><h2>Menu</h2></li>
+                    <li><a href="index.html">Home</li></a></li>
+                    <li><a href="design.html">Design</li></a></li>
+                </ul>
+                <ul>
+                    <li><h2>Recent Posts</h2></li>
+                    <li><a href="index.html">Blogpost</li></a></li>
+                    <li><a href="design.html">Blogpost</li></a></li>
+                </ul>
+            </div>
+        </div>
+        <form id="subscribe" action="submit">
+            <h2>Subscribe to get updates</h2>
+            <ul class="form-name">
+                <li><input type="text" id="first-name" name="first_name" placeholder="First Name"></li>
+                <li><input type="text" id="last-name" name="last_name" placeholder="Last Name"></li>
+            </ul>
+            <input type="text" id="email" name="e_mail" placeholder="Email Address">
+            <button type="submit" class="btn-dark filled">Submit Form</button>
+        </form>
     </footer>
 </body>
 </html>

@@ -1,6 +1,7 @@
 header {
     position: fixed;
     width: 100vw;
+    z-index: 2;
 }
 nav {
     display: flex;
@@ -11,7 +12,7 @@ nav {
     justify-content: space-between;
 }
 
-ul {
+nav ul {
     display: flex;
     margin-right: 40px;
 }

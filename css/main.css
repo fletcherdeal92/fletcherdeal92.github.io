@@ -10,22 +10,194 @@ main {
     padding: 6% 1% 0 1%;
 }
 
-/* Styling for the hero section */
-.hero {
-    height: 75vh;
+main h1 {
     width: 100%;
 }
 
-.hero img {
-    width: 50%;
+/* Styling for the hero section */
+.hero {
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
 }
 
+.hero img {
+    width: 50vw;
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 6;
+}
+
+.hero h2,
+.hero h1,
+.hero p {
+    grid-column:  1 / span 2;
+}
+
+
+.hero h2 {
+ grid-row: 2 / span 1;
+ align-self: end;
+}
+
+.hero h1 {
+    grid-row: 3 / span 1;
+}
+
+.hero p {
+    grid-row: 4 / span 2;;
+    align-self: start;
+    text-align: center;
+}
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* Footer Design - will reuse */
+footer {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+}
 
+footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer-nav {
+    grid-column: 1 / span 3;
+    grid-row: 1 /span 2;
+}
+
+.nav-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-flex ul {
+    margin-right: 20px;
+}
+
+/* Form Styling */
+
+form {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 2;
+    display: grid;
+}
+
+input {
+    background-color: #2F4455;
+    height: 30px;
+    border: solid 2px #fff;
+    margin: 5px;
+    font-family: museo-sans, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+
+form button {
+    margin-top: 10px;
+    justify-self: end;
+}
+
+.form-name {
+    display: flex;
+    width: 100%;
+}
+.form-name li {
+    width: 50%;
+}
+
+
+
+/* Mobile Responsivness */
+/* Tablets in vertical */
+@media (max-width: 800px) {
+    .hero {
+        height: 65vh;
+    }
+
+    .hero img {
+        width: 100vw;
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 6;
+    }
+    
+    .hero h2,
+    .hero h1,
+    .hero p {
+        grid-column:  1 / span 2;
+        z-index: 1;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.76);
+    }
+    
+    
+    .hero h2 {
+     grid-row: 1 / span 1;
+     align-self: end;
+    }
+    
+    .hero h1 {
+        grid-row: 2 / span 1;
+    }
+    
+    .hero p {
+        grid-row: 2 / span 1;;
+        align-self: end;
+        text-align: center;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+    .hero img {
+        width: 100vw;
+        grid-column: 1 / span 4;
+        grid-row: 3 / span 3;
+    }
+    
+    .hero h2,
+    .hero h1,
+    .hero p {
+        grid-column:  1 / span 4;
+    }
+    
+    
+    .hero h2 {
+     grid-row: 1 / span 1;
+     align-self: end;
+    }
+    
+    .hero h1 {
+        grid-row: 2 / span 1;
+    }
+    
+    .hero p {
+        grid-row: 2 / span 2;;
+        align-self: center;
+        text-align: center;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.76);
+        z-index: 1;
+    }
+
+    .footer-nav {
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 1;
+    }
+
+    form {
+        grid-column: 1 / span 6;
+        grid-row: 2 / span 1;
+    }
+}
 
 
