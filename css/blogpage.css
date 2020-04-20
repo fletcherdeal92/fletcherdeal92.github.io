@@ -31,7 +31,7 @@
 }
 
 /* Grid design for the two main divs in the blog */
-.flex-container {
+div.flex-container {
     margin-top: 20px;
     display: flexbox;
     flex-wrap: wrap;
@@ -103,4 +103,17 @@ ol.list li {
 .about ul {
     text-align: left;
     padding: 10px 0;
+}
+
+/* Mobile changes */
+@media (max-width: 600px) {
+    article,
+    .about {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .about {
+        margin-top: 20px;;
+    }
 }
