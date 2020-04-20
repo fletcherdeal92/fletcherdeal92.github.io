@@ -28,6 +28,9 @@
     width: 200px;
 }
 
+.card img {
+    width: 100%;
+}
 /* Mobile layout */
 @media (max-width: 600px) {
     .card {
