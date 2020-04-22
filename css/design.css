@@ -50,9 +50,28 @@ h2 {
     font-weight: 900;
 }
 
-/* Light Headers */
+/* Light text */
 .light {
     color: #2F4454;
+}
+
+/* Paragraph emphasis notations */
+strong,
+em,
+u {
+    color: #2F4455;
+}
+
+strong {
+    font-weight: 900;
+}
+
+em {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
 }
 
 /* Links */

@@ -57,6 +57,7 @@ article img {
 
 article p {
     margin: 5px 0;
+    text-indent: 15px;
 }
 
 .caption {
